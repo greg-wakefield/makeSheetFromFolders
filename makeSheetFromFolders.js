@@ -9,11 +9,9 @@ const compName = 'Comp 1'
 
 async function main() {
     const folders = await fs.promises.readdir(rootFolder, { withFileTypes: true })
-    const subFolders = folders.map(folder => folder.isDirectory())
 
     const structure = {}
     const sheet = [['Comp Name', 'File Name']]
-    const rows = []
 
     for (let folder of folders) {
         if (!folder.isDirectory()) continue
