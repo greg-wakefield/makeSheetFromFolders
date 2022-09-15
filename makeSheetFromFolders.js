@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const rootFolder = 'C:/Users/grego/Downloads/Crytopunks'
+const rootFolder = 'C:/Users/grego/Downloads/testing'
 const saveFolder = rootFolder
 const fileName = 'testing.csv'
 const rowAmount = 1000
