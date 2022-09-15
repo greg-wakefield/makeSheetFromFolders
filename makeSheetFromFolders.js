@@ -24,7 +24,7 @@ async function main() {
     for (let i = 0; i < rowAmount; i++) {
         const row = [compName, i]
         for (let stuct in structureCopy) {
-            structureCopy = makeCopy(structure, {})
+            structureCopy = makeCopy(structure, structureCopy)
             row.push(structureCopy[stuct].splice(randomNumber(structureCopy[stuct].length), 1)[0])
         }
         sheet.push(row)
